@@ -10,18 +10,41 @@ import styled from "@emotion/styled";
 
 const theme = {
   colors: {
-    primary: "#3498db",
-    secondary: "#2ecc71",
-    danger: "#e74c3c",
-    text: "#333",
-    background: "#f5f5f5",
+    primary: "#8b5cf6",
+    secondary: "#ec4899",
+    danger: "#ef4444",
+    text: "#1e293b",
+    background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)",
   },
 };
 
 const AppContainer = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("https://img.freepik.com/premium-photo/glowing-earbuds-dark-background_1302-50645.jpg")
+      center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
 `;
 
 function App() {
