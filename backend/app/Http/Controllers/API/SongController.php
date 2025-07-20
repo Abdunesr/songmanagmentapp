@@ -9,9 +9,7 @@ use Illuminate\Support\Facades\Validator;
 
 class SongController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    
     public function index()
     {
         $songs = Song::all();
@@ -22,9 +20,7 @@ class SongController extends Controller
         ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+  
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -51,9 +47,7 @@ class SongController extends Controller
         ], 201);
     }
 
-    /**
-     * Display the specified resource.
-     */
+   
     public function show(Song $song)
     {
         return response()->json([
@@ -63,9 +57,7 @@ class SongController extends Controller
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    
     public function update(Request $request, Song $song)
     {
         $validator = Validator::make($request->all(), [
@@ -92,9 +84,7 @@ class SongController extends Controller
         ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+   
     public function destroy(Song $song)
     {
         $song->delete();
