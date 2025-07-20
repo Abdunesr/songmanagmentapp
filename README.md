@@ -49,6 +49,7 @@ Response:
   "last_page": 5,
   "total": 50
 }
+```
 
 ## Features
 - **Frontend**: React with Redux, Emotion styling, pagination
@@ -72,7 +73,7 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan serve
-
+```
 # Webpack Configuration
 
 The application uses a custom Webpack configuration with the following features:
@@ -147,15 +148,15 @@ module.exports = (env) => {
     },
   };
 };
+```
 # AI Usage Policy
 
 ## AI-Assisted Development
 The following parts of the project were developed with AI assistance:
 - **Frontend Styling**: 
   - 100% of CSS and component styling was generated using ChatGPT
-  - Emotion styling and theme configurations
-i Have got a little help in these area  i was learning some patterns 
-- **State Management**:
+  - Emotion styling and theme configurations 
+- **i Have got a little help in these area  i was learning some patterns State Management**:
   - Debugging assistance with Redux state updates
   - Redux-Saga implementation patterns
   - Verified through Redux DevTools and application testing
