@@ -148,7 +148,14 @@ module.exports = (env) => {
     },
   };
 };
+
+
 ```
+## Application Views
+
+| Song List | Add Form | Edit Form |
+|-----------|----------|-----------|
+| ![Song List](./screenshots/Screenshot1.png) | ![Add Song](./screenshots/Screenshot2.png) | ![Edit Song](./screenshots/Screenshot2.png) |
 # AI Usage Policy
 
 ## AI-Assisted Development
